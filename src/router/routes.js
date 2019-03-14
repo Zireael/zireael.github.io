@@ -1,5 +1,5 @@
 import about from "@/views/About.vue";
-import home from "@/views/Home.vue";
+// import home from "@/views/Home.vue";
 
 export const routes = [
   {
@@ -13,11 +13,14 @@ export const routes = [
   {
     path: "/about",
     name: "about",
-    component: about
+    components: { "route-app": about }
   },
   {
     path: "/home",
     name: "home",
-    component: () => import(/* webpackChunkName: "home" */ "@/views/Home.vue")
+    components: {
+      "route-app": () =>
+        import(/* webpackChunkName: "home" */ "@/views/Home.vue")
+    }
   }
 ];

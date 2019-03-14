@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Roboto+Condensed|Open+Sans|Lato');
+
+html {
+  height: 100%;
+ }
+
+ body * {
+   box-sizing: border-box;
+ }
+
+  body {
+    margin: 0;
+    min-height: 100%;
+    font-size: 16px;
+    line-height: 1.00;
+    /* font-family: 'Roboto Condensed', Calibri, Arial, Helvetica, sans-serif; */
+    font-family: Calibri, 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+  }
+
+  h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+/* Screen adjustments */
+@media all and (max-width: 640px) {
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body * {
+    font-size: 2vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+[v-cloak] > * { display:none; }
+[v-cloak]::before {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url('data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==');
+}
+
+  .transition1-enter {        /* active for 1 frame */
+    opacity:0;
+    }
+  .transition1-enter-active {
+    transition: opacity 1s;
+  }
+  .transition1-leave {        /* active for 1 frame */
+    }
+  .transition1-leave-active {
+    /* position: absolute !important; */
+    transition: opacity 1s;
+    opacity: 1;
+  }
+
+  .transition2-enter {        /* active for 1 frame */
+    opacity: 0;
+    }
+  .transition2-enter-active {
+    animation: slide-in 0.25s ease-out forwards;
+    transition: opacity 0.25s;
+  }
+  .transition2-leave {        /* active for 1 frame */
+    }
+  .transition2-leave-to {
+    /* position: absolute !important; */
+    animation: slide-out 0.25s ease-out forwards;
+    transition: opacity 0.25s;
+    opacity: 0;
+  }
+
+
+  @keyframes slide-in {
+    from {
+      transform: translateY(0.25em)
+    }
+    to {
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      transform: translateY(0)
+    }
+    to {
+      transform: translateY(0.25em)
+    }
+  }
