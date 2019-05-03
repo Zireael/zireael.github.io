@@ -8,11 +8,11 @@ module.exports = {
 
   //baseUrl: "./", //deprecated
   // publicPath: "../SiteAssets/mdv_study_plans/_production/",
-  indexPath: "index.htm6l",
+  indexPath: "index.html",
 
-  publicPath: "./",
-  outputDir: "_production",
-  assetsDir: "_assets",
+  publicPath: "/",
+  outputDir: "www",
+  assetsDir: "assets",
 
   // productionSourceMap: undefined,
   // parallel: undefined,

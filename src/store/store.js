@@ -4,6 +4,7 @@ import pathify from "@/store/modules/pathify"; // https://davestewart.github.io/
 import { make } from "vuex-pathify";
 import vuexPersist from "vuex-persist"; // https://github.com/championswimmer/vuex-persist  // https://alligator.io/vuejs/vuex-persist-state/
 import LZString from "lz-string";
+//vuex-router-sync // Sync vue-router's current $route as part of vuex store's state.
 import user_settings from "@/store/modules/user_settings";
 
 Vue.use(Vuex);
