@@ -11,7 +11,7 @@ module.exports = {
   indexPath: "index.html",
 
   publicPath: "/",
-  outputDir: "www",
+  outputDir: "docs",
   assetsDir: "assets",
 
   // productionSourceMap: undefined,
